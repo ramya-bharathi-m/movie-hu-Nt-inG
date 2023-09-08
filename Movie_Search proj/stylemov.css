@@ -1,0 +1,117 @@
+body{
+    height: 100%;
+    background:black;
+    /*background: linear-gradient(135deg, rgba(249, 225, 177, 1.0), rgba(252, 179, 118, 1.0));*/
+    background-attachment: fixed;
+}  
+
+.container{
+    width: 700px;
+    margin: 10px auto;
+    display: flex;
+}
+
+.type{
+    background-color: rgba(71, 71, 71, 0.606);
+}
+
+input{
+    color: wheat;
+    width: 80%;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    background-color:black;
+    border-radius: 7px;
+    margin-right: 12px;
+    margin-top: 40px;
+}   
+
+input:focus{
+    border: none;
+    outline:none;
+}
+
+.btn{
+    background-color: wheat;
+    color: black;
+    border-radius: 7px;
+    width: 120px;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie{
+    width: 300px;
+    margin: 1rem;
+    border-bottom-right-radius:20px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.5px;
+
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color:lightgreen;
+}
+
+.movie-info span.orange{
+    color: orange;
+}
+
+.movie-info span.red{
+    color:red;
+}
+
+.overview{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: wheat;
+    padding: 1rem;
+    max-height: 100%;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.movie:hover .overview{
+    transform:translateY(0);
+}
